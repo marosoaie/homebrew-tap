@@ -25,7 +25,7 @@ class GitDiffParser < Formula
     assert_match "f.txt:2", shell_output("#{bin}/git-diff-parser changes #{testpath}/pr.diff --format text")
     (testpath/"build.log").write "/repo/f.txt:2:1: warning: on a changed line"
     output = shell_output(
-      "#{bin}/git-diff-parser filter #{testpath}/build.log --diff #{testpath}/pr.diff --format text"
+      "#{bin}/git-diff-parser filter #{testpath}/build.log --diff #{testpath}/pr.diff --format text",
     )
     assert_match "on a changed line", output
   end

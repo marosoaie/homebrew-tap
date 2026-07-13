@@ -14,9 +14,9 @@ requires Xcode 26+.
 
 ```sh
 brew tap marosoaie/tap
-brew install --HEAD marosoaie/tap/git-diff-parser
+brew install marosoaie/tap/git-diff-parser
 ```
 
-`--HEAD` (build from `main`) is required until the first tagged release.
-Once `v1.0.0` ships, add a stable `url ... tag:` stanza to the formula (see
-the comment in it) and plain `brew install` will work, pinned to the tag.
+Installs are pinned to the tagged release in the formula; `--HEAD` builds
+from `main` instead. On new releases, bump the formula's `tag:` and
+`revision:` to match.

@@ -1,9 +1,10 @@
 class GitDiffParser < Formula
   desc "Show only the build/lint diagnostics a pull request touches"
   homepage "https://github.com/marosoaie/git-diff-parser"
+  url "https://github.com/marosoaie/git-diff-parser.git",
+      tag:      "v1.0.0",
+      revision: "406977657b86cb9db8c5c5d7dbe82b18cab938f3"
   license "MIT"
-  # Head-only until the first tagged release. After v1.0.0 ships, add:
-  #   url "https://github.com/marosoaie/git-diff-parser.git", tag: "v1.0.0"
   head "https://github.com/marosoaie/git-diff-parser.git", branch: "main"
 
   depends_on xcode: ["26.0", :build]

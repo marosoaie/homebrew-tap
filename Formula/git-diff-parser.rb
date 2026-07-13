@@ -2,8 +2,8 @@ class GitDiffParser < Formula
   desc "Show only the build/lint diagnostics a pull request touches"
   homepage "https://github.com/marosoaie/git-diff-parser"
   url "https://github.com/marosoaie/git-diff-parser.git",
-      tag:      "v1.0.0",
-      revision: "406977657b86cb9db8c5c5d7dbe82b18cab938f3"
+      tag:      "v1.0.1",
+      revision: "22e54dbbb7e05b589dd8af4e14f646aa731239ca"
   license "MIT"
   head "https://github.com/marosoaie/git-diff-parser.git", branch: "main"
 

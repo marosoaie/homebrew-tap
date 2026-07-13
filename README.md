@@ -14,6 +14,7 @@ requires Xcode 26+.
 
 ```sh
 brew tap marosoaie/tap
+brew trust marosoaie/tap   # one-time; Homebrew 6 gates third-party taps
 brew install marosoaie/tap/git-diff-parser
 ```
 

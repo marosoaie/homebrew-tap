@@ -2,14 +2,13 @@
 
 Homebrew formulas for [marosoaie](https://github.com/marosoaie) tools.
 
-Both this tap and the source repositories are private: `brew` authenticates
-through git, so any machine whose git credentials can reach the repos (e.g.
-the macOS keychain helper) can install from here without extra setup.
+This tap and the source repositories it builds from are public; `brew`
+clones them over HTTPS, so no credentials are needed.
 
 ## git-diff-parser
 
 Show only the build/lint diagnostics a pull request touches
-([repo](https://github.com/marosoaie/git-diff-parser)). Builds from source;
+([repo](https://github.com/marosoaie/swift-steward)). Builds from source;
 requires Xcode 26+.
 
 ```sh

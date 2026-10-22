@@ -1,11 +1,11 @@
 class GitDiffParser < Formula
   desc "Show only the build/lint diagnostics a pull request touches"
-  homepage "https://github.com/marosoaie/git-diff-parser"
-  url "https://github.com/marosoaie/git-diff-parser.git",
+  homepage "https://github.com/marosoaie/swift-steward"
+  url "https://github.com/marosoaie/swift-steward.git",
       tag:      "v1.0.2",
       revision: "6ef006daf290663a80649aefa7a1fabed2d2fdd4"
   license "MIT"
-  head "https://github.com/marosoaie/git-diff-parser.git", branch: "main"
+  head "https://github.com/marosoaie/swift-steward.git", branch: "main"
 
   depends_on xcode: ["26.0", :build]
 

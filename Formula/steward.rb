@@ -1,4 +1,4 @@
-class GitDiffParser < Formula
+class Steward < Formula
   desc "Show only the build/lint diagnostics a pull request touches"
   homepage "https://github.com/marosoaie/swift-steward"
   url "https://github.com/marosoaie/swift-steward.git",
@@ -11,7 +11,7 @@ class GitDiffParser < Formula
 
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox"
-    bin.install ".build/release/git-diff-parser"
+    bin.install ".build/release/steward"
   end
 
   test do
@@ -23,10 +23,10 @@ class GitDiffParser < Formula
        x
       +y
     DIFF
-    assert_match "f.txt:2", shell_output("#{bin}/git-diff-parser changes #{testpath}/pr.diff --format text")
+    assert_match "f.txt:2", shell_output("#{bin}/steward changes #{testpath}/pr.diff --format text")
     (testpath/"build.log").write "/repo/f.txt:2:1: warning: on a changed line"
     output = shell_output(
-      "#{bin}/git-diff-parser filter #{testpath}/build.log --diff #{testpath}/pr.diff --format text",
+      "#{bin}/steward filter #{testpath}/build.log --diff #{testpath}/pr.diff --format text",
     )
     assert_match "on a changed line", output
   end

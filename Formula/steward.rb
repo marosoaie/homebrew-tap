@@ -2,8 +2,8 @@ class Steward < Formula
   desc "Show only the build/lint diagnostics a pull request touches"
   homepage "https://github.com/marosoaie/swift-steward"
   url "https://github.com/marosoaie/swift-steward.git",
-      tag:      "v1.0.2",
-      revision: "6ef006daf290663a80649aefa7a1fabed2d2fdd4"
+      tag:      "v2.0.0",
+      revision: "130b762314ebb150fa2cb6614ddfe1a07787f05f"
   license "MIT"
   head "https://github.com/marosoaie/swift-steward.git", branch: "main"
 

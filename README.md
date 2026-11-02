@@ -17,7 +17,7 @@ brew trust marosoaie/tap   # one-time; Homebrew 6 gates third-party taps
 brew install marosoaie/tap/steward
 ```
 
-Up to v1.0.2 the formula and its binary were called `git-diff-parser`.
+The formula and its binary used to be called `git-diff-parser`.
 `formula_renames.json` maps the old name to the new one, so `brew upgrade`
 moves an existing install over to `steward`.
 

@@ -9,6 +9,10 @@ class Steward < Formula
 
   depends_on xcode: ["26.0", :build]
 
+  on_macos do
+    depends_on macos: :tahoe
+  end
+
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox"
     bin.install ".build/release/steward"

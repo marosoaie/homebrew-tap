@@ -5,6 +5,8 @@ class Steward < Formula
       tag:      "v0.1.0",
       revision: "1fc1e25c9008aab57a186401bec248af04ee03d6"
   license "MIT"
+  # swift-steward restarted at 0.1.0 after 2.0.0; the scheme lets `brew upgrade` take it.
+  version_scheme 1
   head "https://github.com/marosoaie/swift-steward.git", branch: "main"
 
   depends_on xcode: ["26.0", :build]

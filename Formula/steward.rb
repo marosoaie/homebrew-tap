@@ -2,8 +2,8 @@ class Steward < Formula
   desc "Show only the build/lint diagnostics a pull request touches"
   homepage "https://github.com/marosoaie/swift-steward"
   url "https://github.com/marosoaie/swift-steward.git",
-      tag:      "v0.1.1",
-      revision: "fd3cd9339901380e0077ac166fd568875fb6d79c"
+      tag:      "v0.2.0",
+      revision: "b6405928cfd51e62c2d9dde609257178276e57e1"
   license "MIT"
   # swift-steward restarted at 0.1.0 after 2.0.0; the scheme lets `brew upgrade` take it.
   version_scheme 1
